@@ -1,7 +1,8 @@
-<!DOCTYPE html>
 <?php
-require "server/functions.php";
+include "server/functions.php"
 ?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +68,11 @@ require "server/functions.php";
                     Categories
                 </a>
                 <ul class="collapse show list-unstyled" id="homeSubmenu">
-                    <?php getCats(); ?>
+                    <?php
+				
+					getcats();
+					
+					?>
                 </ul>
             </li>
             <li class="active">
@@ -76,7 +81,11 @@ require "server/functions.php";
                     Brands
                 </a>
                 <ul class="collapse show list-unstyled" id="pageSubmenu">
-                    <?php getBrands(); ?>
+					<?php
+						
+						getbrands();
+					
+					?>
                 </ul>
             </li>
             <li>
